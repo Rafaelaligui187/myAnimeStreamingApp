@@ -14,7 +14,7 @@ export default function AnimeDetails({ route }) {
   useEffect(() => {
     const fetchAnimeDetails = async () => {
       try {
-        const url = `http://192.168.0.104:3000/anime/gogoanime/info/${id}`;
+        const url = `https://consumet-api-3hiw.onrender.com/anime/gogoanime/info/${id}`;
         const response = await axios.get(url);
         setAnime(response.data);
         setLoading(false);
@@ -30,7 +30,7 @@ export default function AnimeDetails({ route }) {
 
   const handleEpisodePress = async (episodeId) => {
     try {
-      const url = `http://192.168.0.104:3000/anime/gogoanime/watch/${episodeId}`;
+      const url = `https://consumet-api-3hiw.onrender.com/anime/gogoanime/watch/${episodeId}`;
       const response = await axios.get(url);
   
       console.log(response.data); // Debugging
