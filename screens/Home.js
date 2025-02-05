@@ -13,8 +13,8 @@ export default function Home({ navigation }) {
 
   const fetchAnimeData = (query, page, isInitial = false) => {
     const url = query
-      ? `http://192.168.0.104:3000/anime/gogoanime/${query}`
-      : `http://192.168.0.104:3000/anime/gogoanime/top`;
+      ? `https://consumet-api-3hiw.onrender.com/anime/gogoanime/${query}`
+      : `https://consumet-api-3hiw.onrender.com/anime/gogoanime/top`;
 
     setLoading(true);
     axios
